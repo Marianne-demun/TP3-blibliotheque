@@ -9,6 +9,6 @@ class Connection extends BaseController
     }
     public function attemptLogin(): string
     {
-        return "on essai de se connecter";
+        return "On essait de se connecter.";
     }
 }
