@@ -1,3 +1,7 @@
+<?php
+// require_once("header.php");
+require_once(APPPATH.'Views/templates/header.php');
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -19,3 +23,6 @@
 </body>
 
 </html>
+<?php
+require_once(APPPATH.'Views/templates/footer.php');
+?>
