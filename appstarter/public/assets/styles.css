@@ -1,0 +1,26 @@
+html
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul
+{
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 0.3rem solid black;
+}
+
+li{
+    line-height: 2.5rem;
+    list-style-type:"\1F4D2";
+    
+}
+
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}

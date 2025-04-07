@@ -8,17 +8,29 @@ require_once(APPPATH.'Views/templates/header.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+    <link href="assets/styles.css" rel="stylesheet" />
     <title>Login</title>
 </head>
 
 <body>
-    <h1>Se connecter</h1>
+    <div class="container">
+    
     <form method="POST" action="/login">
-        <label for="login">matricule abonné / identifiant admin</label>
+        <ul>
+            <li>
+        <label for="login">Matricule abonné / Identifiant admin</label>
+        <p></p>
         <input id="login" name="login" type="text" />
-        <label for="password">nom abonné / mot de passe admin </label>
+            </li>
+            <li>
+        <label for="password">Nom abonné / Mot de passe admin </label>
+        <p></p>
         <input id="password" name="password" type="password" />
+            </li>
         <button type="submit">Se connecter</button>
+        </ul> 
+    </div>   
     </form>
 </body>
 

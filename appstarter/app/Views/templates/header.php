@@ -3,7 +3,7 @@
 
 <head>
     <meta chartset="UTF-8">
-    <title>Projet bibliotheque</title>
+    <title>Bibliothèque Nationale de la BPAR</title>
     <meta name="viewport" content="width=device-width, initial-scale=1;0"/>
     <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
     <link rel="stylesheet" href="assets/style.css"/>
