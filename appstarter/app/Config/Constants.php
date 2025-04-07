@@ -26,6 +26,16 @@ defined('APP_NAMESPACE') || define('APP_NAMESPACE', 'App');
 defined('COMPOSER_PATH') || define('COMPOSER_PATH', ROOTPATH . 'vendor/autoload.php');
 
 /*
+*Définition d'une constante applicative qui indique la login de l'administarteur de l'application:
+*/
+define('APP_ADMIN_LOGIN', 'admin');
+
+/*
+*Définition d'une constante applicative qui défini le mot de passe de l'administarteur de l'app :
+*/
+define('APP_ADMIN_PASSWORD','patron');
+
+/*
  |--------------------------------------------------------------------------
  | Timing Constants
  |--------------------------------------------------------------------------
