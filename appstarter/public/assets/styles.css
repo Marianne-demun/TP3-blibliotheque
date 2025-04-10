@@ -24,3 +24,24 @@ li{
     justify-content: center;
     
 }
+
+
+.headerDePage{
+	font-family: "DM Sans", sans-serif;
+	font-size: 2rem;
+	width: 100%;
+}
+table {
+	border-collapse: collapse;
+	border: 2px solid rgb(140 140 140);
+	letter-spacing: 1px;
+  }
+  caption {
+	caption-side: bottom;
+	padding: 10px;
+	font-weight: bold;
+  }
+  
+  thead {
+	background-color: rgb(228 240 245);
+  }

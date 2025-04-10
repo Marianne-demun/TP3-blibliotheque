@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 
 <head>
-    <meta chartset="UTF-8">
+    <meta charset="UTF-8" />
+    <link href="assets/styles.css" rel="stylesheet">
     <title>Bibliothèque Nationale de la BPAR</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1;0"/>
-    <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
-    <link rel="stylesheet" href="assets/style.css"/>
+    <link rel="icon" type="image/png" href="logoBPAR.jpg"/>
 </head>
+
 <body>
-    <header>
-        <h1> Bienvenue dans la Bibliothèque Nationale de la BPAR </h1>
+    <header class="header-outer">
+    <table class="headerDePage">
+        <thead>
+            <tr>
+            <th scope="col"><img src ="public/assets/logoBPAR.jpg"/></th>
+            <th scope="col">Accueil</th>
+            <th scope="col">Nos livres</th>
+            <th scope="col"><a href="login">Se connecter</a></th>
+            </tr>
+        </thead>
+    </table>
+
+
     </header>
-</body>
