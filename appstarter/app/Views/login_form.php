@@ -17,19 +17,17 @@ require_once(APPPATH.'Views/templates/header.php');
     <div class="container">
     
     <form method="POST" action="/login">
-        <ul>
-            <li>
+        
         <label for="login">Matricule abonné / Identifiant admin</label>
         <p></p>
         <input id="login" name="login" type="text" />
-            </li>
-            <li>
+        <p></p>   
         <label for="password">Nom abonné / Mot de passe admin </label>
         <p></p>
         <input id="password" name="password" type="password" />
-            </li>
+        <p></p>  
         <button type="submit">Se connecter</button>
-        </ul> 
+        
     </div>   
     </form>
 </body>
