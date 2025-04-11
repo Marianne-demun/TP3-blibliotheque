@@ -28,7 +28,7 @@ li{
 
 .headerDePage{
 	font-family: "DM Sans", sans-serif;
-	font-size: 2rem;
+	font-size: 1.7rem;
 	width: 100%;
 }
 table {
@@ -45,3 +45,8 @@ table {
   thead {
 	background-color: rgb(228 240 245);
   }
+.logoHeader{
+	background-image: url('logoBPAR.jpg');
+	width: 100px;
+	height:50px;
+}
