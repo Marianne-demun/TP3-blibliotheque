@@ -34,7 +34,7 @@ class Filters extends BaseFilters
         'forcehttps'    => ForceHTTPS::class,
         'pagecache'     => PageCache::class,
         'performance'   => PerformanceMetrics::class,
-    ];
+        'IsLoggedin'=> IsLoggedin::class];
 
     /**
      * List of special required filters.
@@ -103,5 +103,7 @@ class Filters extends BaseFilters
      *
      * @var array<string, array<string, list<string>>>
      */
-    public array $filters = [];
+    public array $filters = [
+        'IsLoggedin'=> ['before'=>['home','home/*',]]
+    ];
 }
