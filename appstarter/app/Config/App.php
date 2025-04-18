@@ -3,7 +3,6 @@
 namespace Config;
 
 use CodeIgniter\Config\BaseConfig;
-public string $indexPage = '';
 
 class App extends BaseConfig
 {
