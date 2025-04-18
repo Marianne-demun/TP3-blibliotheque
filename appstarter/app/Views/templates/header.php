@@ -16,9 +16,8 @@
             <th scope="col" class="logoHeader"></th>
             <th scope="col">Accueil</th>
             <th scope="col">Nos livres</th>
-            <th scope="col">Qui sommes-nous?</th>
-            <th scope="col">Votre compte</th>
-            <th scope="col"><a href="login">Se connecter</a></th>
+            <th scope="col"><a href="aboutus">Qui sommes-nous?</a></th>
+            <th scope="col"><a href="login">Mon compte</a></th>
             </tr>
         </thead>
     </table>

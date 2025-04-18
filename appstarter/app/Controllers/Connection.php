@@ -18,7 +18,7 @@ class Connection extends BaseController
             
             //return redirect()->to('/admin');
             return $this->LogginUser();
-        } 
+        }
 
        $userFetched = $UserModel->where('matricule_abonne',$this->request->getPost('login'))->first();
 
@@ -37,5 +37,8 @@ class Connection extends BaseController
             ]);
             return redirect()->to('home');    
         }
-    
+        public function aboutus(): string
+    {
+        return view("aboutus");
+    }
 }
