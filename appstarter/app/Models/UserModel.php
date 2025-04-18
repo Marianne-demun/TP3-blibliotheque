@@ -22,6 +22,4 @@ class UserModel extends Model
 
     protected bool $allowEmptyInsert = false;
     protected bool $updateOnlyChanged = true;
-
-
 }

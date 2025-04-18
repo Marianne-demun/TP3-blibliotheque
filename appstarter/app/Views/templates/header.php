@@ -6,6 +6,9 @@
     <link href="assets/styles.css" rel="stylesheet">
     <title>Bibliothèque Nationale de la BPAR</title>
     <link rel="icon" type="image/png" href="logoBPAR.jpg"/>
+    <?php if (isset($loggIn) && $loggIn == true ) : ?>
+        <span>Bonjour,<?=esc($name) ?> </span>
+    <?php endif ?> 
 </head>
 
 <body>

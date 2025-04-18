@@ -32,10 +32,10 @@ class Connection extends BaseController
 	{
             $session = session();
             $session->set([
-                'username' => isset($user) ? ($user('nom_abonne')) : 'admin',
+                'username' => isset($user) ? ($user['nom_abonne'] . strtoupper($user['nom_abonne'])) : 'admin',
                 'loggedIn' => true
             ]);
-            return redirect()->to('home');    
+            return redirect()->to("home");    
         }
         public function aboutus(): string
     {
