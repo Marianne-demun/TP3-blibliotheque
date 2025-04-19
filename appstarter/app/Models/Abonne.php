@@ -4,7 +4,7 @@ namespace app\Models;
 
 use CodeIgniter\Model;
 
-class UserModel extends Model
+class Abonne extends Model
 {
     protected $table = 'abonne';
     protected $primaryKey = 'matricule_abonne';
@@ -22,4 +22,8 @@ class UserModel extends Model
 
     protected bool $allowEmptyInsert = false;
     protected bool $updateOnlyChanged = true;
+
+    function getAbonnematricule($matricule) {
+        return $this->find($matricule);
+    }
 }

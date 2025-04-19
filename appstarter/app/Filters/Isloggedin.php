@@ -8,10 +8,8 @@ use CodeIgniter\HTTP\ResponseInterface;
 
 class IsLoggedin implements FilterInterface
 {
-    public function before(
-        RequestInterface $request,
-        $argument = null
-    ){
+    public function before(RequestInterface $request, $args = null)
+    {
         $session = session();
         if ($session->has('loggedIn') && $session->get('loggedIn') == true) { 
             return $request;
@@ -19,5 +17,9 @@ class IsLoggedin implements FilterInterface
             return redirect()->to('login');
         }
 
+    }
+
+    public function after(RequestInterface $request, ResponseInterface $response, $args=null)
+{
 }
 }
