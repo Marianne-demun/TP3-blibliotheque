@@ -9,26 +9,22 @@ class Connection extends BaseController
     }
     public function attemptLogin() 
     {
-        $UserModel = new \App\Models\UserModel();
+        $abonneModel = new \app\Models\Abonne();
 
         $values = $this->request->getPost(['login', 'password']);
-        if (!empty($values) && $values['login'] == APP_ADMIN_LOGIN && $values['password'] == APP_ADMIN_PASSWORD) 
-        {
-            //session()->set('is_admin', true); 
-            
-            //return redirect()->to('/admin');
-            return $this->LogginUser();
+        if (!empty($values) && $values['login'] == APP_ADMIN_LOGIN && $values['password'] == APP_ADMIN_PASSWORD) {
+            return $this->LoginUser();
         }
 
-       $userFetched = $UserModel->where('matricule_abonne',$this->request->getPost('login'))->first();
+       $rechercheAbonne = $abonneModel->getAbonneByMatricule($values['login']);
 
-       if($this->request->getPost('password') == $userFetched['nom_abonne']) {
-        return $this->LogginUser($userFetched);
-       } else {
+       if(isset($rechercheAbonne) && $rechercheAbonne['nom_abonne'] === $values['password'])
+        return redirect()->to("home");
+        else {
         return redirect()->to('login');
        }
     }
-    private function LogginUser(?object $user=null)
+    private function LoginUser(?object $user = null)
 	{
             $session = session();
             $session->set([
