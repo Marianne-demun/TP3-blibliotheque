@@ -6,7 +6,7 @@ use CodeIgniter\Filters\FilterInterface;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class IsLoggedin implements FilterInterface
+class IsLoggedIn implements FilterInterface
 {
     public function before(RequestInterface $request, $args = null)
     {
