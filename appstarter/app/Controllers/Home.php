@@ -13,6 +13,6 @@ class Home extends BaseController
         'name' => $session->get('username')
     ]).
         view('templates/footer');
-        return view('welcome_message');
+        return $template;
     }
 }

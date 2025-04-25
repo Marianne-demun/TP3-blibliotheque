@@ -13,7 +13,7 @@
 // }
 ?>
 
-namespace app\Models;
+namespace App\Models;
 
 use CodeIgniter\Model;
 
