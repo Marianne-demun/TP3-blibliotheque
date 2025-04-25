@@ -23,7 +23,7 @@ class Abonne extends Model
     protected bool $allowEmptyInsert = false;
     protected bool $updateOnlyChanged = true;
 
-    function getAbonnematricule($matricule) {
+    function getAbonneByMatricule($matricule) {
         return $this->find($matricule);
     }
 }
