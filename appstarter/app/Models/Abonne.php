@@ -11,8 +11,6 @@
 // {
 //     return $this->find($matricule);
 // }
-?>
-
 namespace App\Models;
 
 use CodeIgniter\Model;

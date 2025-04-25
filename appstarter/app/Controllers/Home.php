@@ -12,7 +12,7 @@ class Home extends BaseController
         'loggedIn' => $session->get('loggedIn'),
         'name' => $session->get('username')
     ])
-    .
+    .   view("espaceabonne");
         view('templates/footer');
         return $template;
     }
