@@ -50,3 +50,31 @@ table {
 .footer{
 	background-color: rgb(228 240 245);
 }
+
+.navbare{
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: solid gray;
+    margin-right: 900px;
+    background-image: url(/assets/Bibli.jpg);
+    background-size: cover;
+}
+.navbare .navlinks ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.navbare .navlinks li{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: solid white;
+  font-style: normal;
+  color: white;
+}
+
+.menu{
+  font-style: normal white;
+}
