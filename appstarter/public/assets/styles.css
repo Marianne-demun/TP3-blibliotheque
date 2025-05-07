@@ -49,32 +49,40 @@ table {
 }
 .footer{
 	background-color: rgb(228 240 245);
+  position:sticky;
 }
 
 .navbare{
   display: flex;
+    width: 300px;
+    height: 35rem;
     flex-direction: column;
     align-items: flex-start;
     border: solid gray;
-    margin-right: 900px;
-    background-image: url(/assets/Bibli.jpg);
-    background-size: cover;
+    background-color: rgb(228 240 245);
+    font-style: normal;
+    position: absolute;
 }
 .navbare .navlinks ul{
   list-style-type: none;
   display: flex;
   flex-direction: column;
   align-content: space-around;
+  width: 200px;
 }
 
 .navbare .navlinks li{
   margin-top: 25px;
   margin-bottom: 25px;
-  border: solid white;
+  border: solid black;
   font-style: normal;
-  color: white;
 }
 
-.menu{
-  font-style: normal white;
+.description{
+  display: flex;
+  height: 35rem;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 310px;
+  border: solid gray;
 }
