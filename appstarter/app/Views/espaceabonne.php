@@ -13,7 +13,26 @@ require_once(APPPATH.'Views/templates/header.php');
 <body>
 <form method="POST" action="/espaceabonne">
 
+<<<<<<< Updated upstream
     <p>BLABLABLA</p>
+=======
+    <nav class="navbare">
+        <p class="menu">Menu</p>
+        <div class="navlinks">
+            <ul>
+                <li><a href="#">Gestion des abonnés</a></li>
+                <li><a href="/gestion_livres">Gestion des livres</a></li>
+                <li><a href="#">Gestion des exemplaires</a></li>
+                <li><a href="#">Gestion des emprunts</a></li>
+                <li><a href="#">Gestion des retours</a></li>
+                <li><a href="#">Gestion des demandes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <p class="description">BLABLABLA</p>
+
+>>>>>>> Stashed changes
 </body>
 <?php
 // require_once("header.php");
