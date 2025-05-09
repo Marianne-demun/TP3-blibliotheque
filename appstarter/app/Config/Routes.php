@@ -13,3 +13,7 @@ $routes->post('/aboutus', 'Connection::aboutus');
 $routes->get('/aboutus', 'Connection::aboutus');
 $routes->post('/espaceabonne', 'Connection::espaceabbonne');
 $routes->get('/espaceabonne', 'Connexion::espaceabonne');
+$routes->post('/gestion_livres','Connexion::gestion_livres');
+$routes->get('/gestion_livres','Connexion::gestion_livres');
+$routes->post('/gestion_abonnes','Connexion::gestion_abonnes');
+$routes->get('/gestion_abonnes','Connexion::gestion_abonnes');
