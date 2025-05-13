@@ -18,8 +18,8 @@ require_once(APPPATH.'Views/templates/header.php');
         <p class="menu">Menu</p>
         <div class="navlinks">
             <ul>
-                <li><a href="#">Gestion des abonnés</a></li>
-                <li><a href="#">Gestion des livres</a></li>
+                <li><a href="gestion_abonnes">Gestion des abonnés</a></li>
+                <li><a href="gestion_livres">Gestion des livres</a></li>
                 <li><a href="#">Gestion des exemplaires</a></li>
                 <li><a href="#">Gestion des emprunts</a></li>
                 <li><a href="#">Gestion des retours</a></li>

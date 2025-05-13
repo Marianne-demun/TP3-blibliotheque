@@ -86,3 +86,8 @@ table {
   margin-left: 310px;
   border: solid gray;
 }
+
+.inscription{
+  display: flex;
+  flex-direction: column;
+}
