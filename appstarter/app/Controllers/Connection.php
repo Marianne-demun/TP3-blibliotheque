@@ -47,4 +47,9 @@ class Connection extends BaseController
     {
         return view("gestion_livres");
     }
+
+     public function gestion_emprunts(): string
+    {
+        return view("gestion_emprunts");
+    }
 }

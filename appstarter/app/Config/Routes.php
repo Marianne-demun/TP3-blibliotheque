@@ -17,3 +17,5 @@ $routes->post('/gestion_livres','Connection::gestion_livres');
 $routes->get('/gestion_livres','Connection::gestion_livres');
 $routes->post('/gestion_abonnes','Connection::gestion_abonnes');
 $routes->get('/gestion_abonnes','Connection::gestion_abonnes');
+$routes->post('/gestion_emprunts','Connection::gestion_emprunts');
+$routes->get('/gestion_emprunts','Connection::gestion_emprunts');
