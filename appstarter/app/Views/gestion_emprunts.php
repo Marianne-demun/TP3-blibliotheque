@@ -9,24 +9,24 @@ require_once(APPPATH.'Views/templates/header.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/styles.css" rel="stylesheet" />
-    <title>gestion_livres</title>
+    <title>gestion_emprunts</title>
 </head>
 
 <body>
-<form method="POST" action="/gestion_livres">
+<form method="POST" action="/gestion_emprunts">
 <p><form method="POST" action="/login" class="inscription">
         
-        <label for="number">Code catalogue </label>
+        <label for="text">Matricule abonné </label>
         <p></p>
-        <input id="catalogue" name="catalogue" type="number" />
+        <input id="maticule" name="matricule" type="text" />
         <p></p>
-        <label for="text">Titre du livre </label>
+        <label for="text">Exemplaire dispo </label>
         <p></p>
-        <input id="titre" name="titre" type="text" />
+        <input id="dispo" name="dispo" type="text" />
         <p></p>
-        <label for="text">Theme du livre </label>
+        <label for="date">Date du jour </label>
         <p></p>
-        <input id="theme" name="theme" type="text" />
+        <input id="datedujour" name="datedujour" type="date" />
         <p></p>
         <button type="submit">Enregistrer</button>
         

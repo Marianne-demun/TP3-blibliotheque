@@ -33,8 +33,23 @@ class Connection extends BaseController
             ]);
             return redirect()->to("home");    
         }
-        public function aboutus(): string
+    public function aboutus(): string
     {
         return view("aboutus");
+    }
+
+    public function gestion_abonnes(): string
+    {
+        return view("gestion_abonnes");
+    }
+
+    public function gestion_livres(): string
+    {
+        return view("gestion_livres");
+    }
+
+     public function gestion_emprunts(): string
+    {
+        return view("gestion_emprunts");
     }
 }

@@ -8,20 +8,18 @@ require_once(APPPATH.'Views/templates/header.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/styles.css" rel="stylesheet" />
     <title>espaceabonne</title>
 </head>
 <body>
 <form method="POST" action="/espaceabonne">
 
-<<<<<<< Updated upstream
-    <p>BLABLABLA</p>
-=======
     <nav class="navbare">
         <p class="menu">Menu</p>
         <div class="navlinks">
             <ul>
-                <li><a href="#">Gestion des abonnés</a></li>
-                <li><a href="/gestion_livres">Gestion des livres</a></li>
+                <li><a href="gestion_abonnes">Gestion des abonnés</a></li>
+                <li><a href="gestion_livres">Gestion des livres</a></li>
                 <li><a href="#">Gestion des exemplaires</a></li>
                 <li><a href="#">Gestion des emprunts</a></li>
                 <li><a href="#">Gestion des retours</a></li>
@@ -32,7 +30,6 @@ require_once(APPPATH.'Views/templates/header.php');
 
     <p class="description">BLABLABLA</p>
 
->>>>>>> Stashed changes
 </body>
 <?php
 // require_once("header.php");
