@@ -1,0 +1,93 @@
+html
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8rem;
+    padding: 2rem;
+    border-radius: 10rem;
+    border: 0.3rem solid rgb(228 240 245);
+    box-shadow:8px 8px 10px 0 black;
+    background-image: url(/assets/Bibli.jpg);
+    background-size: cover;
+    background-position: top;
+    font-weight: 800;
+    color: white;
+    
+}
+
+
+.headerDePage{
+	font-family: "DM Sans", sans-serif;
+	font-size: 1.7rem;
+	width: 100%;
+}
+table {
+	border-collapse: collapse;
+	border: 2px solid rgb(140 140 140);
+	letter-spacing: 1px;
+  }
+  caption {
+	caption-side: bottom;
+	padding: 10px;
+	font-weight: bold;
+  }
+  
+  thead {
+	background-color: rgb(228 240 245);
+  }
+.logoHeader{
+    background-image: url(/assets/logoBPAR.jpg);
+	width: 100px;
+	height:50px;
+}
+.footer{
+	background-color: rgb(228 240 245);
+  position:sticky;
+}
+
+.navbare{
+  display: flex;
+    width: 300px;
+    height: 35rem;
+    flex-direction: column;
+    align-items: flex-start;
+    border: solid gray;
+    background-color: rgb(228 240 245);
+    font-style: normal;
+    position: absolute;
+}
+.navbare .navlinks ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  width: 200px;
+}
+
+.navbare .navlinks li{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: solid black;
+  font-style: normal;
+}
+
+.description{
+  display: flex;
+  height: 35rem;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 310px;
+  border: solid gray;
+}
+
+.inscription{
+  display: flex;
+  flex-direction: column;
+}

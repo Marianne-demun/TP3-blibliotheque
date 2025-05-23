@@ -7,8 +7,49 @@ class Connection extends BaseController
     {
         return view("login_form");
     }
-    public function attemptLogin(): string
+    public function attemptLogin() 
     {
-        return "on essai de se connecter!";
+        $abonneModel = new \App\Models\Abonne();
+
+        $values = $this->request->getPost(['login', 'password']);
+        if (!empty($values) && $values['login'] == APP_ADMIN_LOGIN && $values['password'] == APP_ADMIN_PASSWORD) {
+            return $this->LoginUser();
+        }
+
+       $rechercheAbonne = $abonneModel->getAbonneByMatricule($values['login']);
+
+       if(isset($rechercheAbonne) && $rechercheAbonne['nom_abonne'] === $values['password'])
+        return redirect()->to("home");
+        else {
+        return redirect()->to('login');
+       }
+    }
+    private function LoginUser(?object $user = null)
+	{
+            $session = session();
+            $session->set([
+                'username' => isset($user) ? ($user['nom_abonne'] . strtoupper($user['nom_abonne'])) : 'admin',
+                'loggedIn' => true
+            ]);
+            return redirect()->to("home");    
+        }
+    public function aboutus(): string
+    {
+        return view("aboutus");
+    }
+
+    public function gestion_abonnes(): string
+    {
+        return view("gestion_abonnes");
+    }
+
+    public function gestion_livres(): string
+    {
+        return view("gestion_livres");
+    }
+
+     public function gestion_emprunts(): string
+    {
+        return view("gestion_emprunts");
     }
 }

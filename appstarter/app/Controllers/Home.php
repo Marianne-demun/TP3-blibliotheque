@@ -6,6 +6,14 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('welcome_message');
+        $session = session();
+        $template =
+        view('templates/header',[
+        'loggedIn' => $session->get('loggedIn'),
+        'name' => $session->get('username')
+    ])
+    .   view("espaceabonne");
+        view('templates/footer');
+        return $template;
     }
 }
